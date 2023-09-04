@@ -59,7 +59,7 @@ const Routes = () => {
       </div>
     </div>*/}
       <div className='flex flex-wrap gap-4'>
-        {data.map((item, i) => {
+        {data?.map((item, i) => {
           const { image: { src }, link: { domain, title, href } } = item;
           return <div className='w-[13rem] max-w-[16rem] h-[12rem] border-stone-700 border-solid border-2 rounded-2xl' key={i}>
             <div className='w-full h-full flex object-contain'>
